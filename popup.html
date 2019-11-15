@@ -3,26 +3,70 @@
   <head>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
     />
+    <style>
+      body {
+        background-color: #e2b1b1;
+        height: 300px;
+        width: 300px;
+      }
+      #address {
+        margin-top: 40px;
+      }
+      .header {
+        background-color: #258ea6;
+      }
+      .inputs {
+        box-shadow: 10px 10px;
+        background-color: #fcf7f8;
+        margin-top: 50px;
+        margin-left: 20px;
+        width: 250px;
+      }
+      button {
+        margin-top: 25px;
+        margin-left: 75px;
+      }
+      .textBox {
+        width: 150px;
+        margin-bottom: 30px;
+        margin-left: 50px;
+      }
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    </style>
   </head>
   <body>
-    <section class="hero is-dark">
-      <div class="hero-body">
-        <div class="container">
-          <h4 class="title">Homesick</h4>
-          <h6 class="subtitle">Videos for when you miss home</h6>
+    <div class="container header">
+      <h4 class="pt-3">Homesick</h4>
+      <h6 class="pb-3">Videos for when you miss home</h6>
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="inputs">
+          <input
+            class="input textBox"
+            type="text"
+            name="address"
+            id="address"
+            placeholder="Your Home Town"
+          />
         </div>
       </div>
-    </section>
-    <input
-      class="input"
-      type="text"
-      name="address"
-      id="address"
-      placeholder="Your Home Town"
-    />
-    <button class="button" id="addressSubmit">Submit</button>
+      <button
+        type="button"
+        class="btn btn-outline-light btn-lg"
+        id="addressSubmit"
+      >
+        Go Home
+      </button>
+    </div>
+    <img src="./Project.png" />
     <script src="popup.js"></script>
   </body>
 </html>
